@@ -1,0 +1,226 @@
+/* COLORS
+#000000
+#3D0000
+#950101
+#FF0000  TINTS #ff3333
+
+font-family: 'Creepster', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+/* /////////////////////// HALOWEEN STYLE /////////////////////////*/
+
+/* MAIN CONTENT */
+
+* {
+  /* Reset rules */
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* CARDS COMPONENT */
+
+.cards {
+  margin: 1rem auto;
+  text-align: center;
+  width: 75%;
+  border-radius: 4px;
+}
+
+/* INDIVIDUAL CARDS */
+
+.card {
+  margin: 4rem 0;
+  padding: 2.5rem;
+  background-color: rgb(2, 2, 2);
+  border-radius: 30px;
+  border: 3px solid black;
+  text-align: center;
+  box-shadow: 0px 0px 45px #FF0000;
+}
+
+h1, h2, h3, h4 {
+  font-size: 2.5rem;
+  color: #FF0000;
+  font-family: 'Creepster', sans-serif;
+  text-shadow: 2px 2px 10px #000;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+#h2-fix {
+  padding-top: 1.2rem !important;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #ff3333;
+  font-size: 1.8rem;
+  text-shadow: 10px 10px 20px #000;
+}
+
+/* LINKS */
+a:link, a:visited {
+  text-decoration: none;
+  color: #FF0000;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 1px #ff3333;
+}
+
+ a:active, a:hover {
+  text-shadow: 10px 10px 20px #ff3333;
+  transition: text-shadow 1200ms;
+ }
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem 0;
+  font-size: 1.3rem;
+}
+
+ /* IMAGES */
+.img-me {
+  border-radius: 50%;
+  border: 1px solid #0f0f0f;
+  box-shadow: 0px 0px 0px 0f0f0f;
+  transition: box-shadow 500ms;
+  margin-bottom: 2rem;
+}
+
+.img-me:hover {
+  box-shadow: 0px 0px 50px #FF0000;
+  transition: box-shadow 500ms;
+}
+
+/* BACKGROUND DESCRIPTION SECTION */
+
+.background-text {
+  text-align: left;
+  color: rgb(221, 221, 221);
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 2rem;
+}
+
+/* DARE SECTION */
+
+.button {
+  padding: 0.05rem 4rem;
+  background-color: #FF0000;
+  border-radius: 6px;
+  color: #000;
+  border: none;
+}
+
+.button:hover {
+  color: #FF0000;
+  background-color: #000;
+  box-shadow: 0px 0px 10px #0000006c;
+  border: 1px solid #FF0000
+}
+
+.button p {
+  color: #000
+}
+
+.button:hover p {
+  color: #FF0000;
+}
+
+.icon-danger {
+  width: 1.5rem;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+.white-text {
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* FOOTER */
+
+footer {
+  height: 80px;
+  border-top: 1px solid #FF0000;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+footer ul {
+  justify-content: space-around;
+  padding: 0 0;
+}
+
+.social-medias {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.social-media-icon {
+  color: red;
+  width: 80px;
+  height: 80px;
+}
+
+
+@media (max-width: 660px) {
+  h1, h2, h3, h4 {
+    font-size: 2rem
+  }
+
+  .line-description {
+  font-size: 1.2rem !important;
+  }
+
+  .background-text {
+    font-size: 1rem;
+  }
+
+  .social-media-icon {
+    width: 50;
+    height: 50px;
+  }
+
+}
+
+@media (max-width: 740px) {
+  .white-text {
+    font-size: 1.2rem
+  }
+}
+
+@media (max-width: 500px) {
+    h1, h2, h3, h4 {
+    font-size: 1.5rem
+  }
+
+  h4 {
+    font-size: 1.2rem
+  }
+
+  .list {
+    padding: 1rem 0;
+    font-size: 1rem;
+    gap: 1.5
+  }
+
+  .white-text {
+    font-size: 1rem
+  }
+}
